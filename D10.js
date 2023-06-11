@@ -229,7 +229,7 @@ deleteOne()
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-// ESERCIZIO 6
+// ESERCIZIO 5
 
 /*
 function onlyLetters(input) {
@@ -638,23 +638,65 @@ allTr.classList.add('test')
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
+/*
 function isItPrime(number) {
-  const primeNumber = number;
+  const numberList = [];
 
-  for (let i = 0; i < primeNumber; i++)
-    if ([primeNumber / primeNumber === 1] && [primeNumber / 0 === 0]) {
-      console.log(
-        "This is a prime number (divisble by 0 or itself):",
-        primeNumber
-      );
-    } else if ([primeNumber / primeNumber !== 1] && [primeNumber / 0 !== 0]) {
-      console.log("The number is not a prime");
-    } else if (
-      [primeNumber / primeNumber !== 1] && [primeNumber / 0 !== 0] && [
-        primeNumber / i !== 0,
-      ] && [primeNumber / i !== 1]
-    )
-      console.log("The input is not a whole number, or a number:", primeNumber);
+  let totalDivisions = [];
+
+  for (let i = 2; i <= number; i++) {
+    numberList.push(i);
+  }
+
+  for (let i = 0; i < numberList.length; i++) {
+    if (number % numberList[i] === 0) {
+      totalDivisions.push(numberList[i]);
+    }
+  }
+
+  if (totalDivisions.length === 1) {
+    console.log(
+      true,
+      "The number is prime as it can only be divide by itself or one:",
+      number
+    );
+  } else if (number === 0 || number < 0) {
+    console.log(
+      false,
+      "The number is NOT a prime as it's equal to 0 or it's negative:",
+      number
+    );
+  } else {
+    console.log(
+      false,
+      "The number is NOT a prime as it's divisible by other numbers between 1 and itself:",
+      number
+    );
+  }
 }
 
-isItPrime(17);
+isItPrime(2);
+
+*/
+
+// Here is another piece of code I was trying to build to answer to question 29
+
+/*
+function isItPrime(input) {
+
+
+  for (let i = 2; i <= input; i++) {
+    if (input % i >= 2 || input % i > 2) {
+      console.log("It's not a prime");
+      break;
+    } else if (input % i >= 2) {
+      console.log("it's a prime");
+      break;
+    } else input < 0 || input === 0;
+    console.log("The number is not positive");
+    break;
+  }
+}
+
+isItPrime(2);
+*/

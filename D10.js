@@ -573,28 +573,51 @@ selectAllTdTagsInDocument()
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+// RISPOSTA 23
+
+/*
+function addBackgroundColor() {
+  const allLinks = document.querySelectorAll("link");
+
+  allLinks.setAttribute("style", "background-color: red");
+}
+
+addBackgroundColor()
+
+*/
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
 //RISPOSTA 24
 
-/* 
+/*
 function addLiToMyUlList(add) {
-
   const list = document.getElementById("myList");
 
   const addLiToUl = document.createElement("li");
 
-  addLiToUl.innerText = add;
+  addLiToUl.textContent = add;
 
   list.appendChild(addLiToUl);
 }
+
+addLiToMyUlList("hello");
 
 */
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
+*/
+/*
+function removeAllLiFromUl () {
+  const list = document.getElementById("myList");
+  list.remove()
+}
+
+removeAllLiFromUl()
+
 */
 
 /* ESERCIZIO 26

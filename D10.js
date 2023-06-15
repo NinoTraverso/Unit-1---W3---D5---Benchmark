@@ -301,6 +301,15 @@ whatDayIsIt()
   }
 */
 
+/*
+function dice () {
+
+}
+
+function rollTheDice (number) {}
+
+*/
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
@@ -308,6 +317,18 @@ whatDayIsIt()
 // RISPOSTA 9
 
 //CI TORNO DOPO SE HO TEMPO :)
+
+/*
+function daysPassed = (moment) {
+
+let impactDay = new Date (moment)
+
+const days = moment.diff("2015-06-02", "days");
+
+}
+
+daysPassed("2015-07-02")
+*/
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
